@@ -48,10 +48,10 @@ def scrape():
     #step 2: scrap for the featured image
 
     #browser = Browser('chrome', headless=True)
-    path = os.environ["GOOGLE_CHROME_BIN"]
-    print("my path=",path)
-    executable_path = {'executable_path':path}
-    browser = Browser('chrome', **executable_path,headless=True)
+    #path = os.environ["GOOGLE_CHROME_BIN"]
+    #print("my path=",path)
+    #executable_path = {'executable_path':path}
+    browser = Browser('phantomjs')
 
     # URL of page to be scraped
     url_images="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
