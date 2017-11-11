@@ -51,7 +51,7 @@ def scrape():
     path = os.environ["GOOGLE_CHROME_SHIM"]
     print("my path=",path)
     executable_path = {'executable_path':path}
-    browser = Browser('chrome', **executable_path)
+    browser = Browser('chrome', **executable_path,headless=True)
 
     # URL of page to be scraped
     url_images="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
