@@ -48,7 +48,7 @@ def scrape():
     #step 2: scrap for the featured image
 
     #browser = Browser('chrome', headless=True)
-    path = os.environ["GOOGLE_CHROME_SHIM"]
+    path = os.environ["GOOGLE_CHROME_BIN"]
     print("my path=",path)
     executable_path = {'executable_path':path}
     browser = Browser('chrome', **executable_path,headless=True)
